@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e1e2f; /* Darker background */
+  color: #f1f1f1; /* Light text for readability */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+main {
+  max-width: 500px; /* Increased width for better layout */
+  margin: 20px auto; /* Center the main container */
+  padding: 20px;
+  background-color: #2a2a38; /* Slightly darker background for more contrast */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+h1 {
+  text-align: center;
+  color: #f1f1f1;
+  margin-bottom: 20px;
+  font-size: 28px; /* Increased font size for emphasis */
+  font-weight: 500; /* Medium font weight for better readability */
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px; /* Increased padding for better touch targets */
+  background-color: #3b3b4f; /* Darker input background */
+  color: #f1f1f1;
+  border: 1px solid #555; /* Subtle border */
+  border-radius: 8px; /* Rounded corners for inputs */
+  margin-bottom: 15px; /* Increased margin for spacing */
+  font-size: 16px; /* Larger font size for readability */
+}
+
+form input[type="datetime-local"] {
+  color: #f1f1f1;
+}
+
+form .basic {
+  display: flex;
+  gap: 15px; /* Increased gap for better spacing */
+  margin-bottom: 15px; /* Increased margin for spacing */
+}
+
+form button {
+  width: 100%;
+  margin-top: 15px; /* Increased margin for spacing */
+  border: none; /* Removed default border */
+  border-radius: 8px; /* Rounded corners for buttons */
+  padding: 12px; /* Increased padding for better touch targets */
+  background-color: #4caf50; /* Bright green for buttons */
+  color: #fff; /* White text for better contrast */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+form button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.transactions {
+  margin-top: 20px; /* Margin to separate transactions from the form */
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px; /* Increased padding for better spacing */
+  background-color: #3b3b4f; /* Matching input background */
+  color: #f1f1f1;
+  border-radius: 8px; /* Rounded corners for transactions */
+  margin-bottom: 15px; /* Increased margin for spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.transaction:hover {
+  background-color: #4b4b6a; /* Darker background on hover */
+}
+
+.transaction .left {
+  flex: 1;
+}
+
+.transaction .right {
+  text-align: right;
+  flex: 0 0 150px; /* Increased fixed width for alignment */
+}
+
+.transaction .name {
+  font-size: 1.3rem; /* Larger font size for emphasis */
+  font-weight: bold; /* Bold name for prominence */
+  margin-bottom: 5px; /* Space between name and description */
+}
+
+.transaction .description {
+  font-size: 0.9rem; /* Slightly larger font size */
+  color: #d0d0d0; /* Light gray for description */
+}
+
+.transaction .price {
+  font-size: 1.2rem; /* Font size for price */
+  font-weight: bold; /* Bold price for prominence */
+}
+
+.transaction .datetime {
+  font-size: 0.8rem; /* Smaller font size for date/time */
+  color:  #4b4b6a; /* Light gray color for date/time */
+}
+
+/* Color classes for price */
+.price.green {
+  color: #66bb6a; /* Lighter green for positive amounts */
+}
+
+.price.red {
+  color: #e53935; /* Lighter red for negative amounts */
+}
